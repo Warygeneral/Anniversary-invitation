@@ -215,7 +215,7 @@ const EnvelopeCard: React.FC<EnvelopeCardProps> = ({ onComplete }) => {
                 
                 <div className="h-28 w-28 rounded-full bg-gradient-to-tr from-[#78350f] via-[#fbbf24] to-[#fef3c7] p-[2px] shadow-2xl">
                   <div className="h-full w-full rounded-full bg-[#450a0a] flex flex-col items-center justify-center border border-[#fbbf24]/30">
-                    <span className="font-serif text-2xl font-bold text-[#fbbf24]">S & A</span>
+                    <span className="font-serif text-2xl font-bold text-[#fbbf24] text-center"> Click here</span>
                     <div className="w-8 h-[1px] bg-[#fbbf24]/30 my-1" />
                     <span className="text-[8px] tracking-[0.2em] uppercase font-bold text-yellow-200/70">25 Years</span>
                   </div>
