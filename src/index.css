@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #8b0000;
+  --color-brand-light-red: #cc0000;
+  --color-brand-off-white: #fdfbfb;
+  --color-brand-gold: #d4af37;
+  
+  --font-cursive: "Playfair Display", serif;
+  --font-sans: "Poppins", sans-serif;
+}
+
+@utility preserve-3d {
+  transform-style: preserve-3d;
+}
+@utility backface-hidden {
+  backface-visibility: hidden;
+}
+@utility perspective-1000 {
+  perspective: 1000px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: translateX(0);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(100px);
+  }
+}
+
+@keyframes tumble {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg) scale(1);
+  }
+  50% {
+    transform: rotate3d(1, 1, 0, 180deg) scale(0.9);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 360deg) scale(1);
+  }
+}
+
+.petal-fall {
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.petal-tumble {
+  animation-name: tumble;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
